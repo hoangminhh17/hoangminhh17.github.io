@@ -1,0 +1,399 @@
+@import url("animate.css");
+@import url("font-awesome/css/font-awesome.css");
+@import url("bootstrap.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.danhmuc a.btn {
+    display: inline-block;
+    width: 10%;
+    border: 1.4px dashed green;
+}
+
+/*CSS header*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 100%;
+}
+
+#header .head {
+    background-image: url(../images/bg-4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#header .head .hotnew {
+    position: absolute;
+    /* margin: auto; */
+    width: 30%;
+    /* height: auto; */
+    /* display: block; */
+    color: white;
+    /* vertical-align: middle; */
+}
+
+#header .head img.bg {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#header .bar nav.navbar {
+    background: transparent !important;
+}
+
+#header .bar {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+}
+
+#header .head {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* top: 0; */
+    /* z-index: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .head a.btn {
+    border-radius: 10px;
+}
+
+input.form-control {
+    background: transparent;
+    border: 1px solid gray;
+}
+
+button.btn.btn-outline-primary {
+    background: transparent;
+    color: #2272ff;
+    font-family:  cursive;
+    font-size: 16px;
+    box-shadow: 0px 0px 3px 2px #007bff;
+    border: none;
+}
+
+#header .bar ul li a.nav-link {
+    font-size: 20px;
+    padding: 0px;
+    font-family:  cursive;
+}
+
+#header .bar a.navbar-brand {
+    font-size: 30px;
+    padding: 0;
+    font-family:  cursive;
+    font-weight: bold;
+    box-shadow: 0 0 14px 4px #5300ff;
+    border-radius: 16px;
+}
+
+#header .bar ul.navbar-nav {
+    flex-direction:  row;
+    justify-content: space-around;
+}
+
+.container-fluid, .container{
+    padding: 0;
+}
+
+@media screen and (max-device-width: 768px) {
+    *{
+
+    }
+
+#header .head .hotnew {
+        width: 70%; 
+        font-size: 2rem;
+    }
+.hotnew h3, .hotnew h4, .hotnew .nut a {
+    font-size: 3rem;
+}
+}
+
+/*end CSS header*/
+
+/*CSS main > sanphamhot*/
+.open-quick-view i.fa.fa-times {
+    position: absolute;
+    right: 0px;
+    top: -3px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.open-quick-view i.fa.fa-times:hover {
+    color: white;
+}
+
+.view {
+    width: 98%;
+    height: 96%;
+    overflow-y: scroll;
+    overflow-x:  hidden;
+    bottom: 0;
+    position: absolute;}
+
+.open-quick-view {
+    position: absolute;
+    z-index: 3;
+    width: 79%;
+    height: 88%;
+    margin: auto;
+    /* overflow-y:  scroll; */
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nen-den {
+    background: #00000094;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 240%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+i.right, i.left {
+     position: absolute;
+     line-height: 510px;
+     width: 25px;
+     /* background: #000000a6; */
+     color: black;
+     font-size: 25px;
+     opacity: 0;
+     transition: 0.3s;
+     text-align: center;
+     cursor: pointer;
+}
+
+i.left:hover, i.right:hover {
+    color: white;
+    background: #00000075;
+}
+
+i.left {
+    left: 0;
+    transform: translate(-100%);
+}
+
+i.right {
+    right: 0px;
+    transform: translate(100%);
+}
+
+
+.product .images img {
+    width: 100%;
+    position: absolute;
+}
+
+img.image-view {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.images li{
+    list-style-type: none;
+    display: none;
+}
+
+.product {
+    width: 400px;
+    height: 510px;
+    overflow: hidden;
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 8px;
+    float: left;
+}
+
+.utilities {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+.wish-list, .quick-view {
+    float: left;
+    background: #000000b0;
+    color: gray;
+    font-size: 15px;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    opacity: 0;
+    transition: 0.4s;
+    font-weight: 300;
+    cursor: pointer;
+    /* transform: translate(100%); */
+}
+
+.wish-list {
+    transform: translate(100%);
+}
+
+.quick-view {
+    transform: translate(-100%);
+}
+
+.quick-view:hover , .wish-list:hover {
+    color: white;
+}
+
+.product:hover .wish-list, .product:hover .quick-view, .product:hover i.left, .product:hover i.right  {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*end CSS main > sanphamhot*/
+
+/*xử lý CSS main > danhmucsanpham*/
+figure {
+    margin: 0;
+}
+
+figure:hover:before, figure:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+figure:hover figure::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+figure:hover figure:before, figure:hover figure:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+figure:before {
+    content: "\f07a";
+    background: #ffffff78;
+    color: white;
+    font-family:  "Fontawesome";
+    font-style:  normal;
+    position: absolute;
+    top: 35%;
+    left: 36%;
+    font-size: 24px;
+    padding: 8% 10%;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 3;
+    transition: 1s;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+figure:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0000009c;
+    z-index: 2;
+    border-radius: 9px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.heading h1{
+    text-transform: uppercase;
+}
+
+.noidung {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.khoianh {
+    width: 24%;
+    margin: 4px;
+    border-radius: 9px;
+    background: #bbbbbb;
+    text-align: center;
+    font-weight: 500;
+}
+
+.khoianh img{
+    width: 100%;
+    border-radius: 10px;
+    height: 20%;
+    padding: 4px;
+}
+
+}
+@media (max-device-width: 576px){
+    .noidung .khoianh {
+        width: 100%;
+    }
+
+.khoianh img.x1,.khoianh img.x2,.khoianh img.x3,.khoianh img.x4 {
+    width: 100%;
+}
+}
+@media (max-device-width: 768px){
+.noidung .khoianh {
+    width: 48%;
+}
+.khoianh img.x1,.khoianh img.x2,.khoianh img.x3,.khoianh img.x4 {
+    width: 100%;
+}
+}
+
+/*end CSS main > danhmucsanpham*/
+
+
+/*CSS footer*/
+
+footer .fot h1 {
+    margin: auto;
+    font-family: cursive;
+    color: wheat;
+}
+
+footer .row.fot {
+    margin: 10px 0 0 0;
+    background: #0b1823;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+}
+
+/*end CSS footer*/
