@@ -27,9 +27,8 @@ div#img-div {
 }
 
 img#image {
-    width: 90%;
-    padding: 2%;
-    border-radius: 4%;
+    max-width: 100%;
+    border-radius: 0.5%;
 }
 
 div#img-caption {
