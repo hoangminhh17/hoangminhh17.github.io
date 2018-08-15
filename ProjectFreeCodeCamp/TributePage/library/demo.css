@@ -1,0 +1,94 @@
+@import url("animate.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+main#main {
+    display: flex;
+    flex-direction:  column;
+    align-items:  center;
+    position:  relative;
+    overflow: hidden;
+}
+
+h1#title {display: block;width: 100%;text-align: center;background: #a5a1a13d;padding: 1rem;margin: 0 0 0.5rem 0;font-family: sans-serif;}
+
+div#img-div {
+    width: 60%;
+    background: #8080801a;
+    display: flex;
+    flex-direction:  column;
+    border-radius: 5px;
+    align-items: center;
+}
+
+img#image {
+    width: 90%;
+    padding: 2%;
+    border-radius: 4%;
+}
+
+div#img-caption {
+    padding: 0 0 1rem;
+    font-size: 20px;
+}
+
+div#tribute-info {
+    display: grid;
+    margin-top:  2%;
+    font-size: 20px;
+}
+
+.content {
+    display:  grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 1% 0;
+}
+
+div#contact {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+a#tribute-link {
+    text-decoration:  none;
+}
+
+a#tribute-link.facebook {
+    color: blue;
+}
+
+a#tribute-link.github {
+    color: green;
+}
+
+a#tribute-link.instagram {
+    color: #b910b9;
+}
+
+a#tribute-link.twitter {
+    color: #47aed0;
+}
+
+a#tribute-link:hover span {
+    transform: scale(1.5);
+}
+
+#contact h3 {
+}
+
+a#tribute-link span {
+    margin: 1% 0.3%;
+}
+
+footer{
+	color: white;
+	background-color: black;
+	margin: 1% 0 0 0;
+	display: inline;
+}
