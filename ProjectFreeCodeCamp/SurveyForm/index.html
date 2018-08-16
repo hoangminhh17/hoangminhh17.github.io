@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/png" href=""/>
+	<meta content="width= device-width, initial-scale = 1">
+	<link rel="stylesheet" type="text/css" href="library/demo.css">
+</head>
+<body>
+	<form id="survey-form">
+		<fieldset>
+			<legend><h1 id="title">Survey Form</h1></legend>
+			<p id="description">My Project Survey Form</p>
+			<div class="info">
+				<label id="name-label" for="name">Name: </label>
+				<input id="name" type="text" name="name" placeholder="Enter your name" required><br>
+			</div>
+			<div class="info">
+				<label id="email-label" for="email">Email: </label>
+				<input id="email" type="email" name="email" placeholder="Enter your email" required><br>
+			</div>
+			<div class="info">
+				<label id="number-label" for="number">Age: </label>
+				<input id="number" type="number" name="age" min=0 max=100 width='1000px' placeholder="Enter your age"><br>
+			</div>
+			<div class="info">
+				<label for="birth">Birth: </label>
+				<input id="birth" type="date" name="birth"><br>
+			</div>
+			<div id="level">
+				<label for="dropdown">Level of Web Application: </label>
+				<select name="" id="dropdown">
+					<option value="Internship">Internship</option>
+					<option value="Fresher">Fresher</option>
+					<option value="Programer">Programer</option>
+					<option value="Junior">Junior</option>
+					<option value="Developer">Developer</option>
+				</select><br>
+			</div>
+			<div id="sex">
+				<h4>Sex: </h4>
+				<ul style="list-style: none;">
+		          <li class="radio"><label>Male<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+		          <li class="radio"><label>Female<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+		          <li class="radio"><label>Other<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+		        </ul>
+			</div>
+			
+			<div id="hope">
+				<h4>Who are you in future?</h4>
+				<div>
+					<label><input type="checkbox" name="hope" value="Devops">Devops </label>
+	  				<label><input type="checkbox" name="hope" value="Front-End">Front-End </label>
+	  				<label><input type="checkbox" name="hope" value="Back-End">Back-End </label>
+	  				<label><input type="checkbox" name="hope" value="PM">Product Manager </label>
+	  				<label><input type="checkbox" name="hope" value="BA">Business Analyst </label>
+	  				<label><input type="checkbox" name="hope" value="Lead">Lead </label>
+  				</div>
+  			</div>
+  			
+  			<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Any Comments or Suggestions?"></textarea>
+			<button type="submit" id="submit">Submit</button>
+		</fieldset>
+	</form>
+	<script type="text/javascript" src="library/demo.js"></script>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

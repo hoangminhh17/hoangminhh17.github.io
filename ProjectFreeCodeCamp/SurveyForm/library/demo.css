@@ -1,0 +1,108 @@
+@import url("animate.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form#survey-form fieldset {background: #ffffff8c;box-shadow: 0 0 7px 4px black;border-top: none;width: 90%;margin: auto;}
+
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #d3d3d370;
+    font-size: 18px;
+     background-color: #a9d7d1;
+}
+
+legend {
+    background: black;
+    border-radius: 5%;
+    color: white;
+    box-shadow: 0 0 10px 6px black;
+}
+
+form#survey-form {
+    display: block;
+    width: 90%;
+}
+
+p#description {
+    margin: 2% 0;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+form fieldset input {
+    display: inline !important;
+    margin: 0;
+}
+
+.info {
+    display: grid;
+    grid-template-columns:  1fr 4fr;
+    grid-template-rows: 2.5rem;
+    width: 70%;
+    margin: auto;
+}
+
+.info label {
+    margin-top:  5px;
+}
+
+div#level {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 70%;
+    margin: auto;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+div#sex {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+
+#sex li.radio {
+    text-align: start;
+    margin: 1% 0;
+}
+
+div#hope {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#hope div {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+#hope div label {
+    margin: 1%;
+}
+
+textarea#comment {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+button#submit {
+    font-size: 25px;
+    margin: 2%;
+}
