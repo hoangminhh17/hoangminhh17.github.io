@@ -67,6 +67,7 @@ function spellCheck() {
 // Stop timer add reset time
 function stop() {
 	timerRunning = false;
+	textBox.value='';
 	clearInterval(interval);
 	time = 0;
 	sec  = 0;
@@ -83,7 +84,6 @@ function showTime(time, sec, min) {
 
 // reset button click
 function reset() {
-	textBox.value='';
 	root.style.setProperty('--c', '#00000082');
 	stop();
 	showTime(time, sec, min);
